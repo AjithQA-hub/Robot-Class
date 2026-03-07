@@ -3,7 +3,6 @@ package org.rob;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -32,8 +31,6 @@ public class RobotTask2 {
 			
 			a.keyDown(Keys.SHIFT).sendKeys(email,"Inmakes").keyUp(Keys.SHIFT).perform();
 		    
-			
-			
 			a.doubleClick(email).perform();
 			
 			r.keyPress(KeyEvent.VK_CONTROL);
@@ -49,8 +46,6 @@ public class RobotTask2 {
 			r.keyRelease(KeyEvent.VK_CONTROL);
 			r.keyRelease(KeyEvent.VK_V);
 			
-			driver.close();
-				
+			driver.close();	
 	}
-
 }
