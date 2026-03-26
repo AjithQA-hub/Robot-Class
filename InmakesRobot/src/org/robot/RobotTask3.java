@@ -13,13 +13,10 @@ public class RobotTask3 {
 	
 	public static void main(String[] args) throws AWTException {
 	        System.setProperty("webdriver.chrome.driver","C:\\Users\\ajith\\eclipse-workspace\\RobotClass\\Drivers\\chromedriver.exe");
-		
 			WebDriver driver=new ChromeDriver();
-			
 			driver.get("https://en-gb.facebook.com/");
-			
 			driver.manage().window().maximize();
-			
+		
 			Actions a=new Actions(driver);
 			
 			WebElement FaceBook = driver.findElement(By.id("email"));
@@ -40,19 +37,14 @@ public class RobotTask3 {
 				WebElement PassWord = driver.findElement(By.name("pass"));
 				a.contextClick(PassWord).perform();
 				
-
 				for (int j = 0; j <4 ; j++) 
 				{
-					
 	                   r.keyPress(KeyEvent.VK_DOWN);
 	                   r.keyPress(KeyEvent.VK_DOWN);
 				}
-				
 				r.keyPress(KeyEvent.VK_ENTER);
-				r.keyRelease(KeyEvent.VK_ENTER);	
-			
+				r.keyRelease(KeyEvent.VK_ENTER);		
 	}
 			driver.close();
-
 	}
 }
