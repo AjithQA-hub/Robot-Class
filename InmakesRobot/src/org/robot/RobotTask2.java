@@ -27,8 +27,7 @@ public class RobotTask2 {
 			Robot r=new Robot();
 			
 			WebElement email = driver.findElement(By.id("email"));
-//			email.sendKeys("inmakes");
-			
+		
 			a.keyDown(Keys.SHIFT).sendKeys(email,"Inmakes").keyUp(Keys.SHIFT).perform();
 		    
 			a.doubleClick(email).perform();
